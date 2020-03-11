@@ -2,9 +2,23 @@
 	PLANO
 \*---------*/
 .plano{
+	position: relative; /*devido o absolute do .plano--mais-popular*/
 	padding: 10px;
 	border: 1px solid #94a4a5;
 	font-size: 1.4rem; /*14/16=0.875=0.875rem*/
+}
+
+.plano--mais-popular::after {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	background-color: #c20303;
+	color: #fff;
+	content: "MAIS POPULAR";
+	font-size: 0.7142em; /*10/14*/
+	line-height: 2.5;
+	padding: 0 10px;
+
 }
 
 .plano__cabecalho{
@@ -63,3 +77,73 @@
 	text-decoration: none;
 	color: #fff;
 }
+
+.botao--principal{
+	background-color: #004b86;
+	border-radius: 10px;
+}
+
+.botao--principal:hover, .botao--principal:focus{
+	background-color: #003b6a;
+}
+ /*---------*\
+  	 BOTAO    
+ \*---------*/
+ .chamada{
+ 	font-size: 1.6rem;
+ 	text-align: center;
+ }
+
+ .chamada__titulo{
+ 	margin: 0;
+ 	color: #fff;
+ 	font-size: 3.375em; /* 54/16=3.375 */
+ 	line-height: 0.9;
+ 	text-shadow: 1px 1px #313131;
+ }
+
+.chamada__subtitulo {
+	margin: 60px 0;
+	color: #fff;
+}
+
+@media(min-width: 992px){
+	.chamada{
+		padding-left: 10%;
+		padding-right: 10%;
+		font-size: 2.2rem;
+	}
+}
+ /*----------*\
+   DEPOIMENTO    
+ \*----------*/
+ .depoimento{
+ 	font-size: 2.2rem;
+ }
+
+@media(min-width: 992px){
+	.depoimento{
+		padding-left: 15%;
+		padding-right: 15%;
+		font-size: 2.8rem;
+	}
+}
+
+ .depoimento > blockquote{
+ 	margin: 0;
+ 	padding: 0 60px;
+ 	text-align: center;
+ }
+ .depoimento__autor{
+ 	margin-top: 40px;
+ 	text-align: center;
+ 	font-size: 0.6969em;
+ }
+
+ .depoimento__autor > img{
+ 	border-radius: 50%;
+ }
+
+  .depoimento__autor > p{
+ 	margin-top: 10px;
+ }
