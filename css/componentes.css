@@ -118,6 +118,7 @@
    DEPOIMENTO    
  \*----------*/
  .depoimento{
+ 	/*position: relative; por causa do .depoimento > blockquote::before{ position: absolute; }*/
  	font-size: 2.2rem;
  }
 
@@ -130,10 +131,21 @@
 }
 
  .depoimento > blockquote{
+ 	position: relative;
  	margin: 0;
  	padding: 0 60px;
  	text-align: center;
  }
+
+.depoimento > blockquote::before{
+	position: absolute;
+	color: #ccc;
+	font-size: 8em; /* 176px */
+	content: "\201C"; /*codigo unicode*/
+	left: 0px;
+	top: -0.35em; /*Esse calculo é relativo ao 8em logo acima do font-size*/
+ }
+
  .depoimento__autor{
  	margin-top: 40px;
  	text-align: center;
