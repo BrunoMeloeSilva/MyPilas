@@ -159,3 +159,32 @@
   .depoimento__autor > p{
  	margin-top: 10px;
  }
+
+ /*----------*\
+    NAVEGAÇÃO    
+ \*----------*/
+.navegacao{
+
+}
+
+.navegacao__menu{
+	float: right;
+}
+
+ /*---------------*\
+   BOTAO CHAVEADOR   
+ \*---------------*/
+ .botao-chaveador{
+ 	width: 40px;
+ 	height: 40px;
+ 	background: none;
+ 	border: 0;
+ 	outline: none; /*Tira a borda de realce que o navegador coloca quando a tag está selecionada*/
+ 	background-image: url("../images/menu.png");
+ }
+
+ @media(min-width: 992px){
+ 	.botao-chaveador{
+ 		display: none;
+ 	}
+ }

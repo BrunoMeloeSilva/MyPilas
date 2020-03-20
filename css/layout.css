@@ -1,5 +1,6 @@
 .layout-cabecalho {
 	height: 60px;
+	line-height: 60px;
 	border-bottom: 1px solid #ccc;
 	background-color: #fff;
 }
@@ -11,11 +12,6 @@
 	right: 0;
 	z-index: 1; /*para barra de status ficar por cima das caixas de anuncio.*/
 }
-
-.layout-cabecalho img {
-	margin-top: 12px;
-}
-
 
 .layout-planos{
 	padding: 80px 0;
