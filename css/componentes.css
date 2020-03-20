@@ -60,6 +60,7 @@
 	color: #fff;
 	padding: 0.8em 1.2em;
 	text-decoration: none;
+	line-height: normal;
 }
 
 .botao:hover, .botao:focus{
@@ -68,11 +69,12 @@
 	color: #fff;
 }
 
-.botao--assinar{
+.botao--assinar, .botao--login{
 	background-color: #127d00;
 }
 
-.botao--assinar:hover, .botao--assinar:focus{
+.botao--assinar:hover, .botao--assinar:focus, 
+.botao--login:hover, .botao--login:focus{
 	background-color: #0e6400;
 	text-decoration: none;
 	color: #fff;
@@ -187,4 +189,30 @@
  	.botao-chaveador{
  		display: none;
  	}
+ }
+
+ /*---------------*\
+   MENU   
+ \*---------------*/
+ .menu{
+ 	list-style: none;
+ 	margin: 0;
+ 	font-size: 1.4rem;
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	bottom: 0;
+ 	width: 200px;
+ 	background-color: #fbfbfb;
+ 	border-right: 1px solid #eee;
+ 	padding: 20px;
+ }
+
+ .menu__item{
+ 	display: block;
+ 	line-height: 3;
+ }
+
+ .menu__item--botao{
+ 	margin-top: 20px;
  }
