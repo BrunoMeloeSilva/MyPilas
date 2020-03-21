@@ -213,9 +213,14 @@
  	background-color: #fbfbfb;
  	border-right: 1px solid #eee;
  	padding: 20px;
+ 	display: none; /*por padrao nao mostra o menu*/
  }
 
- 
+ .menu--exibindo{
+ 	display: block;
+ }
+
+
  	.menu__item{
  		display: block;
  		line-height: 3;
